@@ -1,0 +1,24 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "find friends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeran-urban/FriendFinder.git"
+  },
+  "author": "Jeran Urban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeran-urban/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/jeran-urban/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  }
+}
