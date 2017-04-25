@@ -11,12 +11,17 @@ var user =0;
 var newBestFriend = [];
 
 //Declare configurations for our Database
-var connection = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'root',
-    database:'friendFinder_db'
-});
+if (process.env.JAWSDB_URL) {
+    var connection = mysql.createConnection(process.env.JAWSDB_URL);
+    }
+else {
+    var connection = mysql.createConnection({
+        host:'localhost',
+        user:'root',
+        password:'root',
+        database:'friendFinder_db'
+    });
+}
 
 //Connect to our Database
 connection.connect();
